@@ -44,6 +44,42 @@ body{
 	font-weight: bolder;
 	cursor: pointer;
 }
+.newsletter h1{
+	color: white;
+	font-size: 3em;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+.newsletter label{
+	display: block;
+	color: white;
+	font-size: 1.5em;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.formulario input, .checkbox {
+	display: block;
+	margin: 0 auto;
+}
+.formulario input {
+	width: 550px;
+	height: 20px;
+	border: 0px solid #000000;
+	border-radius: 30px;
+}
+.formulario input::-webkit-input-placeholder { color:#8EC641; padding-left: 10px;}
+
+#fav-tea {
+	border: 0px solid #000000;
+	border-radius: 30px;
+	background-color: #DBDBDB;
+}
+.checkbox {
+	display: block;
+	color: white;
+	font-size: 1em;
+	margin: 10px 0;
+}
 /*Sección About*/
 #about{
 	background: url("../img/fondo-about.jpg");

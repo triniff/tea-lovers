@@ -4,8 +4,12 @@ sub.addEventListener("click", suscribirse);
 function suscribirse (){
 	var name = document.getElementById("name").value;
 	var email = document.getElementById("email").value;
-	var address = document.getElementById("address").value;
-
+	var address = document.getElementById("address");
+	var select = document.getElementById("fav-tea").value;
+	document.getElementById("name").value = "";
+	document.getElementById("email").value = "";
+	document.getElementById("address").value = "";
+	document.getElementById("fav-tea").value = "";
 	//INTENTANDO UN FOREACH PARA COMPROBAR CAMPOS
 	/*var arreglo = [];
 	arreglo.push(name,email,address);
@@ -21,7 +25,7 @@ function suscribirse (){
     	return mensaje
     	
   	});*/
-  	if(name == "" || email == "" || address == ""){
+  	if(name == "" || /^[a-zA-Z]*$/.test(name) == false ||email == "" || /\S+@\S+\.\S+/.test(email) == false ||  address == "" || select == 0){
   		alert("ERROR");
   	}else{
   		alert("Muchas gracias " + name + " por suscribirte");

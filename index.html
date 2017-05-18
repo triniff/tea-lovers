@@ -20,21 +20,26 @@
 		<div class="newsletter">
 			<h1>¿Te gusta el té?</h1>
 			<form>
-				<label for="nombre">Nombre:</label>
-				<input type="text" id="name" placeholder="Escribe tu nombre">
-				<label for="email">Email:</label>
-				<input type="text" id="email" placeholder="Escribe tu email">
-				<label for="direccion">Dirección:</label>
-				<input type="text" id="address" placeholder="Escribe tu dirección">
-				<label for="nombre">Te favorito:</label>
-				<select>
-				  <option value="negro">Negro</option>
-				  <option value="verde">Verde</option>
-				  <option value="rojo">Rojo</option>
-				  <option value="blanco">Blanco</option>
-				  <option value="oolong">Oolong</option>
-				</select>
-				<input type="checkbox" name="fav-tea" value="tea"> Quiero recibir muestras gratis<br>
+				<div class="formulario">
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="name" placeholder="Escribe tu nombre">
+					<label for="email">Email:</label>
+					<input type="text" id="email" placeholder="Escribe tu email">
+					<label for="direccion">Dirección:</label>
+					<input type="text" id="address" placeholder="Escribe tu dirección">
+					<label for="nombre">Té favorito:</label>
+					<select id="fav-tea">
+					  <option value="" hidden>Selecciona tu té</option>
+					  <option value="negro">Negro</option>
+					  <option value="verde">Verde</option>
+					  <option value="rojo">Rojo</option>
+					  <option value="blanco">Blanco</option>
+					  <option value="oolong">Oolong</option>
+					</select>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" name="fav-tea" value="tea"> Quiero recibir muestras gratis
+				</div>
 			</form>
 			<button id="suscribirse">Suscríbete a nuestro newsletter</button>
 		</div>
