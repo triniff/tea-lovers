@@ -5,6 +5,7 @@ Código Hexadecimal gris footer: #3B3B3B
 /*Sección Bienvenida*/
 body{
 	margin: 0;
+	font-family: 'Raleway', sans-serif;
 }
 #bienvenida {
 	background: url("../img/fondo-bienvenida.jpg");
